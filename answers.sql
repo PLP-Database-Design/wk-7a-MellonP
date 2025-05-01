@@ -1,8 +1,8 @@
 -- Question 1
 
 
-CREATE DATABASE (name your database);
-USE   (database name);
+CREATE DATABASE tradedb;
+USE tradedb;
 
 -- Table creation
 CREATE TABLE ProductDetail (
@@ -28,7 +28,7 @@ SELECT * FROM ProductDetail;
 -- Question 2
 
  
-USE   (database name);
+USE tradedb;
 
 -- First Table
 CREATE TABLE Orders (
