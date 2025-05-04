@@ -1,9 +1,3 @@
--- Question 1
-
-
-CREATE DATABASE tradedb;
-USE tradedb;
-
 -- Table creation
 CREATE TABLE ProductDetail (
     OrderID INT,
@@ -21,15 +15,7 @@ VALUES
 (102, 'Jane Smith', 'Mouse'),
 (103, 'Emily Clark', 'Phone');
 
--- Viewing table in 1NF
-SELECT * FROM ProductDetail;
-
-
 -- Question 2
-
- 
-USE tradedb;
-
 -- First Table
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY,
@@ -43,10 +29,9 @@ VALUES
 (102, 'Jane Smith'),
 (103, 'Emily Clark');
 
-
 -- Second Table
-CREATE TABLE OrderDetails (
-    OrderDetailID INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE Product (
+    OrderID INT AUTO_INCREMENT PRIMARY KEY,
     OrderID INT,
     Product VARCHAR(100),
     Quantity INT,
@@ -54,7 +39,7 @@ CREATE TABLE OrderDetails (
 );
 
 -- Insert data
-INSERT INTO OrderDetails (OrderID, Product, Quantity)
+INSERT INTO Product (OrderID, Product, Quantity)
 VALUES
 (101, 'Laptop', 2),
 (101, 'Mouse', 1),
