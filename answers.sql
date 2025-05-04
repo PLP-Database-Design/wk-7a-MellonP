@@ -1,3 +1,4 @@
+-- Question 1 --
 -- Table creation
 CREATE TABLE ProductDetail (
     OrderID INT,
